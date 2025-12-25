@@ -1,6 +1,6 @@
 "use strict"; // treat all js code as newer js version
 
-// alert("hello") // we are using nodejs not browser
+// alert("hello") // we are using nodejs , not browser
 
 let name = "bhawna"
 let age = 21
