@@ -67,10 +67,16 @@ type of:                                 "value":
   console.log(email);
   console.log(identity);
   
-  //heap   (non-primitive)  it return reference(original)
+  //heap   (non-primitive) - it return reference(original)
 
   let user1 = {
-    user = "user@google.com",
-    upiId = "user@ybl",
+    user : "user@google.com",
+    upiId : "user@ybl",
   };
   
+  let user2 = user1 
+
+user2.user = "bhawna@google.com" // to change the object
+
+console.log(user1.user);
+console.log(user2.user);
