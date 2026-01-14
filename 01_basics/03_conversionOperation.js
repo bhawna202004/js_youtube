@@ -1,12 +1,12 @@
 
-let score = true
+let score = "33abc"
 
-console.log(typeof score)
+console.log(typeof score)  // string
 
 let valueInNumber = Number(score)
 
-console.log(valueInNumber)  
-console.log(typeof valueInNumber)  
+console.log(valueInNumber)  // NaN
+console.log(typeof valueInNumber)    // number
 
 // "33" => 33
 // "33abc"  => NaN
@@ -17,7 +17,7 @@ console.log(typeof valueInNumber)
 
 let isLoggedIn = ""
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);     // false
 
 // 1 => true 
 // "string" => true 
@@ -28,8 +28,8 @@ console.log(booleanIsLoggedIn);
 
 let someNumber = "33abc"
 let StringNumber = String(someNumber)
-console.log(StringNumber);
-console.log(typeof StringNumber);
+console.log(StringNumber);               // 33abc
+console.log(typeof StringNumber);          // string
 
 // 33 => 33
 // "33abcs" => 33abcs

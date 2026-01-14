@@ -7,16 +7,15 @@ let age = 21
 let isLoggedIn = false
 let state = null
 
-// nummer => 2 to power 52
+// number => 2 to power 52
 // bigInt 
 // string
 // boolean => true/false
 // null => standalone value 
-// undefined => 
+// undefined => undefined
 // symbol => unique 
 //object 
 
 console.log(typeof name);   // string
 console.log(typeof null); //object
 console.log(typeof undefined);  // undefined
-
