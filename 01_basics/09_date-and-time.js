@@ -8,7 +8,7 @@ let myDate = new Date()
 // console.log(typeof myDate);     // object
 
 let myCreatedDate = new Date(2026, 0, 23, 15, 3, 51) 
-// console.log(myCreatedDate);   // 2026-01-22T18:30:00.000Z , does;nt clearify
+// console.log(myCreatedDate);   // 2026-01-22T18:30:00.000Z , doesn't clearify
 
 // console.log(myCreatedDate.toDateString());   // Fri Jan 23 2026
 // console.log(myCreatedDate.toLocaleString());   // 23/1/2026, 3:03:51 pm
@@ -23,6 +23,11 @@ let myCreateDate = new Date("01-14-2025")
 
 let myTimeStamp = Date.now()
 
-// console.log(myTimeStamp);
-// console.log(myCreateDate.getTime()); // time in millisecond
+console.log(myTimeStamp);
+console.log(myCreateDate.getTime()); // time in millisecond
 console.log(Math.floor(Date.now()/1000));
+
+let newDate = new Date()
+console.log(newDate.getMonth());
+console.log(newDate.getDay());           
+console.log(newDate.getUTCMonth());     // UTC: universal coordinated time 
