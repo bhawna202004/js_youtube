@@ -23,11 +23,17 @@ let myCreateDate = new Date("01-14-2025")
 
 let myTimeStamp = Date.now()
 
-console.log(myTimeStamp);
-console.log(myCreateDate.getTime()); // time in millisecond
-console.log(Math.floor(Date.now()/1000));
+// console.log(myTimeStamp);
+// console.log(myCreateDate.getTime()); // time in millisecond
+// console.log(Math.floor(Date.now()/1000));
 
 let newDate = new Date()
-console.log(newDate.getMonth());
-console.log(newDate.getDay());           
+console.log(newDate.getFullYear());
+console.log(newDate.getMonth() + 1 );    // 1 - january       
 console.log(newDate.getUTCMonth());     // UTC: universal coordinated time 
+
+// `${newDate.getDay}and the time `
+
+console.log(newDate.toLocaleString('default',{
+    weekday:"short",
+}));
