@@ -22,7 +22,7 @@ console.log(jsUser["mySym"]);
 jsUser.email = "bb123@yahoo.com"     // for modification
 
 
-// Object.freeze(jsUser)           // freeze object from modification. no command modify after this command.
+// Object.freeze(jsUser);           // freeze object from modification. no command modify after this command.
 
 
 jsUser.email = "bb12@gpt.com" 
