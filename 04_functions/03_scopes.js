@@ -1,5 +1,5 @@
 // {} = scope
-// global scope - outide if , value in global dcope available for block scope
+// global scope - outide if , value in global scope available for block scope
 // block scope - inside if , value in block scope not available for global 
 
 
@@ -52,4 +52,3 @@ function addone (value){
 const addtwo = function(value){
     return value + 2
 }
- console.log(addtwo(5));
