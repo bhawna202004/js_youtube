@@ -18,7 +18,6 @@ const user = {
 
 
 
-
 // ++++++++++ type 1 function ++++++++
 
 // function chai(){
