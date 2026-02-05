@@ -22,7 +22,6 @@ console.log(mySum);
 
 
 
-
 // by arrow function
 const myTotal = myNums.reduce( (acc , curr) => acc + curr,  initialValue )
 console.log(myTotal);
