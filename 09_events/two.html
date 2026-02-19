@@ -10,7 +10,31 @@
     <button id="stop">stop</button>
 </body>
 <script>
-    setTimeout(()=>(console.log("BHAWNA")
-    ), 2000)
+    // setTimeout(()=>(console.log("BHAWNA")    // setTimeout kitna bhi time daalo print 1 baar hi hoga 
+    // ), 200)  
+
+    // const sayBhawna = (console.log("BHAWNA")    // setTimeout kitna bhi time daalo print 1 baar hi hoga 
+    // )
+    // setTimeout(sayBhawna,300)
+
+
+
+    // setInterval(()=>(console.log("helooooo")    // setInterval m baar baar print hoga
+    // ),200)
+
+
+
+    // to change in doc ---
+    //   document.querySelector('h1').innerHTML = "best js series"
+    const changeText = ()=>{
+         document.querySelector('h1').innerHTML = "best js series"
+    }
+const changeMe = setTimeout(changeText,20)
+
+document.querySelectora('#stop')  
+addEventListener('click', ()=>(
+    console.log('STOPPED')
+    
+))
 </script>
 </html>
