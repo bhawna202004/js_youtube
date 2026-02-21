@@ -29,12 +29,12 @@
     const changeText = ()=>{
          document.querySelector('h1').innerHTML = "best js series"
     }
-const changeMe = setTimeout(changeText,20)
+const changeMe = setTimeout(changeText,4000)
 
-document.querySelectora('#stop')  
-addEventListener('click', ()=>(
+document.querySelector('#stop')  
+addEventListener('click', function(){
+    clearTimeout(changeMe)
     console.log('STOPPED')
-    
-))
+})
 </script>
 </html>
