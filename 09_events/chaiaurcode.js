@@ -1,15 +1,27 @@
-// geerate a random colour
+// generate a random colour
 
 const randomColour = ()=>{
     const hex = "0123456789ABCDEF"
     let color = '#'
-    for(let i = 0; i <= 6 ; i++){
-   color += hex[Math.floor(Math.random() * 16)]
+    for(let i = 0; i < 6 ; i++){
+        color += hex[Math.floor(Math.random() * 16)]
     }
-    return color
+    return color;
 }
-console.log(randomColour());
 
-document.querySelector('#start').addEventListener('click',()=>{
-    
-})
+let intervalId;
+
+const startChangingColor = function(){
+    intervalId = setInterval(changeBgColor, 1000);
+
+    function changeBgColor(){
+        document.body.style.backgroundColor = randomColour();
+    }
+};
+
+const stopChangingColor = function(){
+    clearInterval(intervalId);
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
